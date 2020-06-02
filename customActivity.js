@@ -3,7 +3,7 @@ var connection = new Postmonger.Session()
 connection.trigger('ready');
 
 connection.on('initActivity', function(payload) {
-    console.log('data coming from MC:', payload)
+    document.querySelector("#MC_data").innerText = 'rrrrrr'
 });
 
 connection.on('clickedNext', function() { 
