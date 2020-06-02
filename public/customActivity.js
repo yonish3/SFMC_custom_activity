@@ -2,6 +2,7 @@ var connection = new Postmonger.Session()
 
 connection.trigger('ready');
 var payload = `
+
 {
     "name": "",
     "id": null,
@@ -13,7 +14,6 @@ var payload = `
                 { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
                 { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
                 { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"}
-            },
         ],
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
       }
@@ -43,7 +43,7 @@ var payload = `
 var config = JSON.parse(payload)
 
 connection.on('initActivity', function(payload) {
-    document.querySelector("#MC_data").innerText = 'hello hello'
+    document.querySelector("#MC_data").innerText = payload
 });
 
 connection.on('clickedNext', function() { 
