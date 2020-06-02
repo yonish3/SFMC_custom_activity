@@ -1,0 +1,22 @@
+{
+  "name": "sfmc_custom_activity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonish3/SFMC_custom_activity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonish3/SFMC_custom_activity/issues"
+  },
+  "homepage": "https://github.com/yonish3/SFMC_custom_activity#readme",
+  "dependencies": {
+    "postmonger": "0.0.16"
+  }
+}
