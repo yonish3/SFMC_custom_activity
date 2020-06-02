@@ -31,12 +31,13 @@ var payload = `
 	"url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
 }`
 
+var config = JSON.parse(payload)
 connection.on('initActivity', function(payload) {
     document.querySelector("#MC_data").innerText = 'hello hello'
 });
 
 connection.on('clickedNext', function() { 
     console.log('the next button has been clicked?')
-    connection.trigger('updateActivity', payload);
+    connection.trigger('updateActivity', config);
 
  });
