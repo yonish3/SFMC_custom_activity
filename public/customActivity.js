@@ -9,9 +9,12 @@ var payload = `
     "arguments": {
       "execute": {
         "inArguments": [
-          { "contactKey": "{{Contact.Key}}" },
-          { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
-          { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"}
+                { "contactKey": "{{Contact.Key}}" },
+                { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
+                { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
+                { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"},
+                {"emailAddress": "{{InteractionDefaults.Email}}"
+            },
         ],
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
       }
@@ -39,6 +42,7 @@ var payload = `
 `
 
 var config = JSON.parse(payload)
+
 connection.on('initActivity', function(payload) {
     document.querySelector("#MC_data").innerText = 'hello hello'
 });
