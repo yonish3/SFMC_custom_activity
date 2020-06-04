@@ -3,6 +3,8 @@
 	"metaData": {
 		"icon": "ServiceWise-Logo-512.png",
 		"category": "message",
+		"isConfigured": true
+
 	},
 	"type": "REST",
 	"userInterfaces": {
