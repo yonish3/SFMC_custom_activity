@@ -2,7 +2,8 @@
 	"workflowApiVersion": "1.1",
 	"metaData": {
 		"icon": "ServiceWise-Logo-512.png",
-		"category": "message"
+		"category": "message",
+		"isConfigured": true
 	},
 	"type": "REST",
 	"userInterfaces": {
@@ -19,5 +20,12 @@
       "publish": {
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
       }
-    }
+	},
+	"editable": true,
+    "outcomes": [
+      {
+        "next": "WAITBYDURATION-1"
+      }
+    ],
+    "errors": []
 }
