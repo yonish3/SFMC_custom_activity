@@ -13,15 +13,7 @@ var payload = {
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
       }
     },
-    "configurationArguments": {
-      "publish": {
-        // Endpoint that receives a notification when a user publishes the journey.
-        "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
-      }
-    },
     "metaData": {
-      "icon": "ServiceWise-Logo-512.png",
-      "category": "message",
       "isConfigured": true
     },
     "editable": true,
