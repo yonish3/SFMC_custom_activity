@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/yonish3/SFMC_custom_activity#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "postmonger": "0.0.16"
+    "postmonger": "0.0.16",
+    "request": "^2.88.2",
+    "soap": "^0.31.0"
   }
 }
-
