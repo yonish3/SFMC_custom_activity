@@ -1,7 +1,7 @@
 var connection = new Postmonger.Session()
 
 connection.trigger('ready');
-var configToSend = require('./configToSend.json')
+// var configToSend = require('./configToSend.json')
 
 // var config = JSON.parse(payload)
 var configToShow = JSON.stringify(configToSend)
