@@ -3,7 +3,7 @@ var connection = new Postmonger.Session()
 connection.trigger('ready');
 console.log(configToSend)
 var config = JSON.stringify(configToSend)
-
+// גגג
 connection.on('initActivity', function(payload) {
     document.querySelector("#MC_data").innerText = config
 });
