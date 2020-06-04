@@ -2,11 +2,9 @@ var connection = new Postmonger.Session()
 
 connection.trigger('ready');
 console.log(payload)
-var config = JSON.stringify(payload)
 
-
-connection.on('initActivity', function() {
-    document.querySelector("#MC_data").innerText = config
+connection.on('initActivity', function(data) {
+    document.querySelector("#MC_data").innerText = JSON.stringify(data) 
 });
 
 connection.trigger('requestTokens');
