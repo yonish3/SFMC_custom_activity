@@ -3,7 +3,6 @@
 	"metaData": {
 		"icon": "ServiceWise-Logo-512.png",
 		"category": "message",
-		"isConfigured": true
 	},
 	"type": "REST",
 	"userInterfaces": {
@@ -19,7 +18,10 @@
     "configurationArguments": {
       "publish": {
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
-      }
+	  },
+	  "save": {
+        "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
+	  }
 	},
 	"editable": true,
     "outcomes": [
