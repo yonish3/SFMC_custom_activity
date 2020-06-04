@@ -6,7 +6,7 @@ var config = JSON.stringify(payload)
 
 
 connection.on('initActivity', function(payload) {
-    document.querySelector("#MC_data").innerText = payload
+    document.querySelector("#MC_data").innerText = config
 });
 
 connection.on('clickedNext', function() { 
