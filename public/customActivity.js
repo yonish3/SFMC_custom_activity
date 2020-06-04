@@ -11,5 +11,5 @@ connection.on('initActivity', function(payload) {
 
 connection.on('clickedNext', function() { 
     console.log('the next button has been clicked?')
-    connection.trigger('updateActivity', config);
+    connection.trigger('updateActivity', configToSend);
  });
