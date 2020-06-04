@@ -1,8 +1,8 @@
 var connection = new Postmonger.Session()
 
 connection.trigger('ready');
-console.log(configToSend)
-var config = JSON.stringify(configToSend)
+console.log(payload)
+var config = JSON.stringify(payload)
 
 
 connection.on('initActivity', function(payload) {
@@ -11,5 +11,5 @@ connection.on('initActivity', function(payload) {
 
 connection.on('clickedNext', function() { 
     console.log('the next button has been clicked?')
-    connection.trigger('updateActivity', configToSend);
+    connection.trigger('updateActivity', payload);
  });
