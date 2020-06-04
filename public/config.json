@@ -2,8 +2,7 @@
 	"workflowApiVersion": "1.1",
 	"metaData": {
 		"icon": "ServiceWise-Logo-512.png",
-		"category": "message",
-		"isConfigured": true
+		"category": "message"
 
 	},
 	"type": "REST",
