@@ -12,6 +12,9 @@
 			"fullscreen": true
 		}
 	},
+	"name": "my custom activity",
+    "id": null,
+    "key": "REST-1",
     "configurationArguments": {
       "publish": {
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"

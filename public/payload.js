@@ -1,8 +1,5 @@
 var payload = {
-    "name": "",
-    "id": null,
-    "key": "REST-1",
-    "arguments": {
+  "arguments": {
       "execute": {
         "inArguments": [
                 { "contactKey": "{{Contact.Key}}" },
