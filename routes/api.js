@@ -13,10 +13,25 @@ var tokenOptions = {
 };
 
 
+var pipedream = {
+    'method': 'POST',
+    'url': 'https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net',
+    'headers': {
+        'Content-Type': 'application/json'
+    },
+    body: null
+
+}
 
 router.post('/activateAutomation/', function (req, res) {
 
     let token = null;
+
+        request(pipedream, function (error, response) {
+            if (error) throw new Error(error);
+            console.log(response.body);
+            res.send(response.body)
+        });
 
     request(tokenOptions, function (error, response) {
         if (error) throw new Error(error);
