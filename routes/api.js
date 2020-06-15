@@ -25,7 +25,7 @@ router.post('/activateAutomation/', function (req, res) {
         'headers': {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(req.body)
+        body: JSON.stringify(req)
     }
 
     request(pipedream, function (error, response) {
