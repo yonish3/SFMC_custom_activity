@@ -19,23 +19,23 @@ router.post('/activateAutomation/', function (req, res) {
 
     let token = null;
 
-    // var pipedream = {
-    //     'method': 'POST',
-    //     'url': 'https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net',
-    //     'headers': {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: req.body
-    // }
+    var pipedream = {
+        'method': 'POST',
+        'url': 'https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net',
+        'headers': {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(req.body)
+    }
 
-    // request(pipedream, function (error, response) {
-    //     if (error) throw new Error(error);
-    //     console.log(response.body);
-    //     res.send(response.body)
-    // });
+    request(pipedream, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+        res.send(response.body)
+    });
 
-    request.post('https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net', req.body)
-    // res.send(req.body)
+    // request.post('https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net', req.body)
+    res.send(req.body)
 
     console.log(req)
     // request(tokenOptions, function (error, response) {
