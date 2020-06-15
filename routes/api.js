@@ -35,7 +35,7 @@ router.post('/activateAutomation/', function (req, res) {
     });
 
     // request.post('https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net', req.body)
-    res.send(req.body)
+    response.send(req.body)
 
     console.log(req)
     // request(tokenOptions, function (error, response) {
