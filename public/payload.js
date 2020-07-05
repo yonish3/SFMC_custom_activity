@@ -5,7 +5,8 @@ var payload = {
                 { "contactKey": "{{Contact.Key}}" },
                 { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
                 { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"},
-                { "emailAddress": "{{InteractionDefaults.test_f}}" }
+                { "emailAddress": "{{InteractionDefaults.test_f}}" },
+                { "First Name": "{{Contact.Attribute.[Email Demographics].[First Name]}}"}
         ],
         "url": "https://sfmc-custom-activity-test.herokuapp.com/activateAutomation"
       }
