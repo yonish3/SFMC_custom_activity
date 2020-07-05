@@ -5,7 +5,9 @@ var payload = {
           { "contactKey": "{{Contact.Key}}" },
           { "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
           { "LastName": "{{Contact.Attribute.JourneyEntrySource.LastName}}"},
-          { "emailAddress": "{{InteractionDefaults.Email}}" }
+          { "emailAddress": "{{InteractionDefaults.Email}}"},
+          { "test_f": "{{test_f}}"}
+          
         ],
         "url": "https://518f99cb594e9d5daf1228f9f1d35a7a.m.pipedream.net"
       }
