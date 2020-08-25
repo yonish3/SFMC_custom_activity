@@ -12,16 +12,19 @@
         #sayHiDiv{
             background: brown;
         }
+        #headLabel{
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
     <img id="logo" alt="ServiceWise" src="../ServiceWise-Logo-512.png">
     <h1>Hello world</h1>
 
-    <label for="team">Choose a team member:</label>
+    <label id="headLabel" for="team">Say hi to your team members:</label>
 
     <select name="team" id="team">
-        <option value="default">choose a team member</option>
+        <option value="default">Team member</option>
         <option value="Hanit">Hanit</option>
         <option value="Tal">Tal</option>
         <option value="Lior">Lior</option>
@@ -34,7 +37,7 @@
         <h1 id = "sayWhatsUp"></h1>
     </div>
     <br><br>
-    <h2>Payload configuration: </h2>
+    <h3>Payload configuration: </h3>
     <p id="MC_data"></p>
 
 
